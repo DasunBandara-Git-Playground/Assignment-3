@@ -85,6 +85,7 @@ public class studentDetailsSheet{
             }
         }
         if(count == 8){
+            System.out.println();
             String tableLine = "-".repeat(30);
             System.out.printf("+%s+\n",tableLine);
             //System.out.printf("|%30s|\n","");
@@ -94,7 +95,7 @@ public class studentDetailsSheet{
             double avg = total/3;
             String status = (avg >=75) ? "Credit Pass" : (avg >= 55) ? "Pass" : "Fail";
             System.out.printf("| %-6s : %s%-20s%s|\n","Status",(status=="Credit Pass" ? GREEN : status=="Pass" ? BLUE : RED),status,RESET);
-            System.out.printf("| %-6s : %-7.2f  %s : %.2f|\n","Total",total,"Avg",avg);
+            System.out.printf("| %-6s : %-6.2f %s : %.2f%-2s|\n","Total",total,"Avg",avg,"%");
             System.out.printf("+%s+\n",tableLine);
             System.out.printf("|%-8s| %-5s | %-11s |\n","Subject","Marks","Status");
             System.out.printf("+%s+\n",tableLine);
