@@ -90,7 +90,7 @@ public class studentDetailsSheet{
             System.out.printf("+%s+\n",tableLine);
             //System.out.printf("|%30s|\n","");
             System.out.printf("| %-6s : %s%-20s%s|\n","Name",BLUE,name.toUpperCase(),RESET);
-            System.out.printf("| %-6s : %-20d|\n","Age",age);
+            System.out.printf("| %-6s : %-3d %-16s|\n","Age",age,"years old");
             double total = marks1 + marks2 + marks3;
             double avg = total/3;
             String status = (avg >=75) ? "Credit Pass" : (avg >= 55) ? "Pass" : "Fail";
