@@ -44,7 +44,7 @@ public class studentDetailsSheet{
                         scanner.nextLine();
                         count++;
                         subject2 = scanner.nextLine();
-                        if(subject2.startsWith("SE-") && subject2 != subject1){
+                        if(subject2.startsWith("SE-") && !(subject2.equalsIgnoreCase(subject1))){
                             System.out.print("Enter your marks 2: ");
                             marks2 = scanner.nextDouble();
                             count++;
@@ -53,7 +53,7 @@ public class studentDetailsSheet{
                                 scanner.nextLine();
                                 subject3 = scanner.nextLine();
                                 count++;
-                                if(subject3.startsWith("SE-") && subject3 != subject2 && subject3 != subject1){
+                                if(subject3.startsWith("SE-") && !(subject3.equalsIgnoreCase(subject2)) && !(subject3.equalsIgnoreCase(subject1))){
                                     System.out.print("Enter your marks 3: ");
                                     marks3 = scanner.nextDouble();
                                     count++;
